@@ -6,8 +6,13 @@ import cors from "cors";
 
 dotenv.config();
 
+// export const instance = new Razorpay({
+//   key_id: process.env.Razorpay_Key,
+//   key_secret: process.env.Razorpay_Secret,
+// });
+
 export const instance = new Razorpay({
-  key_id: process.env.Razorpay_Key,
+  key_id: process.env.Razorpay_key,  // ✅ Match the .env variable exactly
   key_secret: process.env.Razorpay_Secret,
 });
 
